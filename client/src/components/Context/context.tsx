@@ -10,6 +10,7 @@ interface CartContextProps {
     productCount: { [productId: number]: number };
     increment: (productId: number) => void;
     decrement: (productId: number) => void;
+    removeAllProducts: () => void;
     removeProduct: (productId: number) => void;
     addToCart: (productId: number, product: Product) => void;
 }
@@ -66,6 +67,10 @@ export const CartProvider: FC<PropsWithChildren> = ({ children }) => {
             const updatedProductCount = {...productCount};
             updatedProductCount[productId] -= 1;
             setProductCount(updatedProductCount);
+        },
+        removeAllProducts: () => {
+            setCart([]);
+            setCartCount(0);
         },
         removeProduct: (productId: number) => {
             const updatedCart = cart.filter(p => p.id !== productId);

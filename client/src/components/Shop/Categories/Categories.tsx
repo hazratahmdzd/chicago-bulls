@@ -53,7 +53,7 @@ export const Categories = () => {
             </div>
             <div className="categories-bottom">
                 <div className="container container-categories-white">
-                <h2>{t("ENDIN")}: <span>{`${hours} HRS ${minutes} MIN ${seconds} SEC`}</span></h2>
+                <h2>{t("ENDIN")}: <span>{`${hours} ${t("HRS")} ${minutes} ${t("MIN")} ${seconds} ${t("SEC")}`}</span></h2>
                     <h2 className='categories-special'>{t("UPTO")}</h2>
                     <h2>{t("USECODE")}: <span>BACKCOURT</span></h2>
                 </div>

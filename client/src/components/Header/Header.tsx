@@ -20,6 +20,7 @@ import Auth from "../Auth/Auth";
 import { jwtDecode } from "jwt-decode";
 import { useCart } from "../Context";
 import { Product } from "../../models";
+import { Buy } from "./SweetAlert";
 
 export const Header = () => {
   const context = useCart();
@@ -43,7 +44,7 @@ export const Header = () => {
   function hamburgerHandler() {
     setClose(!close);
 
-    if(cartClose) {
+    if (cartClose) {
       setCartClose(false);
       cartBtnHandler();
     }
@@ -81,7 +82,7 @@ export const Header = () => {
   function cartBtnHandler() {
     setCartClose(!cartClose);
 
-    if(close) {
+    if (close) {
       setClose(false);
       hamburgerHandler();
     }
@@ -219,7 +220,9 @@ export const Header = () => {
               </button>
               <button onClick={cartBtnHandler} className="cartbtn">
                 <img className="cart" src={cart} />
-                { context?.cartCount! > 0 && <div className="cartcount">{context?.cartCount}</div> }
+                {context?.cartCount! > 0 && (
+                  <div className="cartcount">{context?.cartCount}</div>
+                )}
               </button>
               {!isSmallScreen && <Auth />}
               <Space wrap>
@@ -301,9 +304,9 @@ export const Header = () => {
       {/* cart div */}
 
       <div className="cart-screen">
-        <p className="cart-header">Your Basket</p>
+        <p className="cart-header">{t("Basket")}</p>
         <nav>
-          <ul>
+          <ul style={{ textAlign: "center" }}>
             {contextCart.length! > 0 ? (
               contextCart.map((product: Product) => {
                 const count = context?.productCount[product.id] || 0;
@@ -345,8 +348,12 @@ export const Header = () => {
                 );
               })
             ) : (
-              <p className="error-cart">No Product In Your Basket :/</p>
+              <div style={{ width: "80%", margin: "auto", textAlign: "center" }}>
+                <p className="error-cart">{t("BasketError")}</p>
+                <p className="helper-cart">{t("BasketHelper")}</p>
+              </div>
             )}
+            <li>{contextCart.length! > 0 && <Buy />}</li>
           </ul>
         </nav>
       </div>

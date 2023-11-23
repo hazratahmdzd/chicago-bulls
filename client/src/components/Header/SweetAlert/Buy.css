@@ -1,0 +1,17 @@
+.button {
+  width: 70%;
+  border-radius: 5px;
+  padding: 9px;
+  margin-top: 20px;
+  background-color: var(--red);
+  color: var(--white);
+  border: 1px solid var(--white);
+  font: var(--lexend-12-regular);
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:hover {
+    transition: 0.2s all;
+    opacity: 0.7;
+  }
+}

@@ -420,6 +420,12 @@ header {
   color: #fff;
 }
 
+.helper-cart {
+  font: var(--lexend-16-light);
+  margin-top: 300px;
+  color: var(--red);
+}
+
 @media (max-width: 792px) {
   .container > .header-items > nav > ul {
     display: none;
@@ -447,6 +453,16 @@ header {
 }
 
 @media (max-width: 767px) {
+  .hamburger-screen > nav > ul > li > .profil-about {
+    > h3 {
+      font: var(--secular-16);
+      color: var(--white);
+    }
+    > p {
+      font: var(--lexend-10-regular);
+      color: var(--white);
+    }
+  }
   .main-product {
     width: 95%;
   }

@@ -10,6 +10,8 @@
   "author": "hazratahmdzd",
   "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-react": "^4.1.1"
+    "@vitejs/plugin-react": "^4.1.1",
+    "sweetalert2": "^11.10.1",
+    "sweetalert2-react-content": "^5.0.7"
   }
 }
