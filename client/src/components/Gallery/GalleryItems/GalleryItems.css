@@ -1,0 +1,11 @@
+@import url('../../../App.css');
+
+.gallery-items{
+    margin-top: 80px;
+}
+
+.gallery-items>.container>.gallery-items-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

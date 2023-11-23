@@ -1,0 +1,42 @@
+@import url('../../../App.css');
+
+.background {
+    margin-top: 40px;
+    position: relative;
+
+    > img {
+        width: 100%;
+    }
+}
+
+.text {
+    color: var(--white);
+    font: var(--secular-56);
+    width: 40%;
+    text-align: end;
+    
+}
+
+.container-sm {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
+}
+
+@media (max-width: 825px) {
+    .text {
+        font: var(--secular-28);
+    }
+}
+
+@media (max-width: 515px) {
+    .text {
+        font: var(--secular-16);
+    }
+}

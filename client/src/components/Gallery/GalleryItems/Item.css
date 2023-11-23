@@ -1,0 +1,112 @@
+@import url('../../../App.css');
+
+
+.item-inner{
+    display: flex;
+    gap: 30px;
+
+}
+.item-inner-reverse{
+  
+    flex-direction: row-reverse;
+
+}
+
+.item>.item-inner>.item-left>img{
+    width: 100%;
+}
+
+.item>.item-inner>.item-right>.right-inner>.title{
+    color: var(--white);
+    font: var(--secular-22);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.item>.item-inner>.item-right>.right-inner>.content{
+    color: var(--white);
+    font: var(--lexend-14-regular);
+    margin-bottom: 14px;
+}
+
+.item>.item-inner>.item-right>.right-inner>.link{
+    color: var(--red);
+    text-decoration: none;
+    font: var(--lexend-14-regular);
+}
+
+@media(max-width:1229px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-18);
+   
+    }
+}
+@media(max-width:1031px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-16);
+   
+    }
+}
+@media(max-width:858px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-14);
+   
+    }
+}
+
+@media(max-width:531px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-10);
+        margin-bottom: 10px;
+        >img{
+            width: 40px;
+        }
+   
+    }
+    .item>.item-inner>.item-right>.right-inner>.content{
+        color: var(--white);
+        font: var(--lexend-12-regular);
+        margin-bottom: 6px;
+    }
+}
+@media(max-width:531px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-8);
+        margin-bottom: 8px;
+        >img{
+            width: 35px;
+        }
+   
+    }
+    .item>.item-inner>.item-right>.right-inner>.content{
+        color: var(--white);
+        font: var(--lexend-12-regular);
+        margin-bottom: 4px;
+    }
+}
+@media(max-width:394px){
+    .item>.item-inner>.item-right>.right-inner>.title{
+        
+        font: var(--secular-8);
+        margin-bottom: 4px;
+        >img{
+            display: none;
+        }
+   
+    }
+    .item>.item-inner>.item-right>.right-inner>.content{
+        color: var(--white);
+        font: var(--lexend-10-regular);
+        margin-bottom: 2px;
+    }
+    .item-inner{
+        gap: 10px;
+    
+    }
+}

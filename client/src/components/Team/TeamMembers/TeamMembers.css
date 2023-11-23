@@ -1,0 +1,43 @@
+@import url("../../../App.css");
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+
+  > h3 {
+    color: var(--red);
+    font: var(--secular-28);
+  }
+
+  > .members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 50px;
+  }
+}
+
+.loading {
+  font: var(--secular-18);
+  padding: 20px;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .main {
+    > .members {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 515px) {
+  .main {
+    > .members {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

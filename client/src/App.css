@@ -1,0 +1,73 @@
+:root {
+  --red: #b40f36;
+  --white: #fff;
+  --black: #1e1e1e;
+  --gray-white: #f2f2f2;
+  --gray: #525252;
+  --bg-black: #010001;
+  --secular-8: 8px "Secular One", sans-serif;
+  --secular-10: 10px "Secular One", sans-serif;
+  --secular-11: 11px "Secular One", sans-serif;
+  --secular-12: 12px "Secular One", sans-serif;
+  --secular-14: 14px "Secular One", sans-serif;
+
+  --secular-16: 16px "Secular One", sans-serif;
+  --secular-18: 18px "Secular One", sans-serif;
+  --secular-20: 20px "Secular One", sans-serif;
+  --secular-22: 22px "Secular One", sans-serif;
+  --secular-24: 24px "Secular One", sans-serif;
+  --secular-28: 28px "Secular One", sans-serif;
+  --secular-30: 30px "Secular One", sans-serif;
+  --secular-32: 32px "Secular One", sans-serif;
+  --secular-36: 36px "Secular One", sans-serif;
+  --secular-38: 38px "Secular One", sans-serif;
+  --secular-40: 40px "Secular One", sans-serif;
+
+  --secular-44: 44px "Secular One", sans-serif;
+  --secular-45: 45px "Secular One", sans-serif;
+  --secular-48: 48px "Secular One", sans-serif;
+  --secular-50: 50px "Secular One", sans-serif;
+  --secular-52: 52px "Secular One", sans-serif;
+
+  --secular-56: 56px "Secular One", sans-serif;
+  --secular-64: 64px "Secular One", sans-serif;
+  --lexend-16: 16px "Lexend", sans-serif;
+  --lexend-8-light: lighter 8px "Lexend", sans-serif;
+  --lexend-10-light: lighter 10px "Lexend", sans-serif;
+  --lexend-12-light: lighter 12px "Lexend", sans-serif;
+  --lexend-14-light: lighter 14px "Lexend", sans-serif;
+  --lexend-16-light: lighter 16px "Lexend", sans-serif;
+  --lexend-20-light: lighter 20px "Lexend", sans-serif;
+  --lexend-10-regular: 10px "Lexend", sans-serif;
+  --lexend-12-regular: 12px "Lexend", sans-serif;
+  --lexend-14-regular: 14px "Lexend", sans-serif;
+  --lexend-16-regular: 16px "Lexend", sans-serif;
+  --lexend-18-regular: 18px "Lexend", sans-serif;
+  --lexend-20-regular: 20px "Lexend", sans-serif;
+  --lexend-24-regular: 24px "Lexend", sans-serif;
+}
+
+body {
+  background-color: var(--bg-black) !important;
+}
+
+body {
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.loading {
+  opacity: 0;
+}
+
+.container {
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+

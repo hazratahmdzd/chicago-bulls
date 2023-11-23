@@ -1,0 +1,242 @@
+@import url("../../App.css");
+.upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 10px 0;
+  /* width: 100%; */
+  > .team-logos {
+    display: flex;
+    justify-content: space-around;
+  }
+  > .informations {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: var(--lexend-14-regular);
+    margin-bottom: 10px;
+
+    > .date {
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+  }
+  > .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--red);
+  }
+  > .links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font: var(--lexend-14-regular);
+    > .link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 8px;
+      border: 2px solid var(--black);
+      border-radius: 8px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: static !important;
+}
+
+.upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 10px;
+  margin-right: 10px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card:last-child {
+  margin-right: 0;
+}
+@media (max-width: 2300px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 535px;
+}
+}
+@media (max-width: 1924px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 475px;
+}
+}
+@media (max-width: 1734px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 435px;
+}
+}
+@media (max-width: 1594px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 400px;
+}
+}
+@media (max-width: 1466px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 380px;
+}
+}
+@media (max-width: 1396px){
+  .upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .card {
+  width: 350px;
+}
+}
+@media (max-width: 1279px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 335px;
+  }
+}
+
+
+@media (max-width: 1191px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 290px;
+  }
+} 
+@media (max-width: 1024px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 400px;
+  }
+} 
+
+@media (max-width: 940px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 390px;
+  }
+} 
+
+@media (max-width: 840px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 350px;
+  }
+} 
+
+@media (max-width: 780px) {
+  .upcoming
+    > .container
+    > .card-section
+    > .cards
+    > .react-multi-carousel-list
+    > .react-multi-carousel-track
+    > .react-multi-carousel-item
+    > .card {
+    width: 100%;
+  }
+} 
+
+.upcoming
+  > .container
+  > .card-section
+  > .cards
+  > .react-multi-carousel-list
+  > .react-multi-carousel-dot-list> .react-multi-carousel-dot--active button {
+    background-color: #fff;
+  }

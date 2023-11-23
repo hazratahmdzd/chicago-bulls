@@ -1,0 +1,138 @@
+@import url("../../App.css");
+
+.banner {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  > .banner-img {
+    width: 100%;
+  }
+}
+.banner > .container > .banner-inner {
+  position: absolute;
+  display: flex;
+  top: 0;
+  padding-top: 40px;
+}
+.banner > .container > .banner-inner > .banner-left {
+  flex: 1;
+
+  > p {
+    text-transform: uppercase;
+    font: var(--secular-48);
+    color: var(--white);
+    > span {
+      color: var(--black);
+    }
+  }
+  > button {
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font: var(--secular-28);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+.banner > .container > .banner-inner > .banner-right {
+  flex: 1.8;
+}
+@media (max-width: 2800px){
+  .banner > .container > .banner-inner{
+    padding-top: 120px;
+  }
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-64);
+    }
+    > button {
+      font: var(--secular-38);
+    }
+  }
+}
+@media (max-width: 1500px){
+  .banner > .container > .banner-inner{
+    padding-top: 60px;
+  }
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-50);
+    }}
+  
+}
+@media (max-width: 1290px) {
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      text-transform: uppercase;
+      font: var(--secular-36);
+      color: var(--white);
+    }
+    > button {
+      font: var(--secular-28);
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-30);
+    }
+    > button {
+      font: var(--secular-20);
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-28);
+    }
+    > button {
+      font: var(--secular-16);
+    }
+  }
+}
+
+@media (max-width: 687px) {
+  .banner > .container > .banner-inner {
+    padding-top: 20px;
+  }
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-22);
+    }
+    > button {
+      font: var(--secular-12);
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-18);
+    }
+    > button {
+      font: var(--secular-12);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .banner > .container > .banner-inner {
+    padding-top:20px;
+  }
+  .banner > .container > .banner-inner > .banner-left {
+    > p {
+      font: var(--secular-12);
+    }
+    > button {
+      font: var(--secular-12);
+    }
+  }
+}

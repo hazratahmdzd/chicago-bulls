@@ -1,0 +1,33 @@
+@import url("../../App.css");
+.gallery {
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.gallery > .container > .title {
+  color: var(--red);
+  font: var(--secular-28);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.gallery
+  > .container
+  > .gallery-wrapper
+  > .react-multi-carousel-list
+  > .react-multi-carousel-track
+  > .react-multi-carousel-item
+  > .gallery-item
+  > img {
+  width: 90%;
+}
+
+
+.gallery
+  > .container
+  > .gallery-wrapper
+  > .react-multi-carousel-list
+  > .react-multi-carousel-dot-list> .react-multi-carousel-dot--active button {
+    background-color: #fff;
+  }

@@ -1,0 +1,23 @@
+@import url("../../App.css");
+
+.upcoming {
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.upcoming > .container > .title {
+  color: var(--red);
+  font: var(--secular-28);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.upcoming > .container > .card-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upcoming > .container > .card-section > .cards {
+  width: 100%;
+}
